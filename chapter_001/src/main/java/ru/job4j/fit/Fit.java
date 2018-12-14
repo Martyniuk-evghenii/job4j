@@ -4,22 +4,18 @@ package ru.job4j.fit;
  * Программа расчета идеального веса.
  */
 public class Fit {
-
-    /**
-     * Идеальный вес для мужщины.
-     * @param height Рост.
-     * @return идеальный вес.
-     */
-    public double manWeight(double height) {
-        return (height - 100) * 1.15;
+    public static void main(String[] args) {
+        String name = "Dog";
+        change(name);
+        System.out.println(name);
+        name = change(name);
+        System.out.println(name);
     }
 
-    /**
-     * Идеальный вес для женщины.
-     * @param height Рост.
-     * @return идеальный вес.
-     */
-    public double womanWeight(double height) {
-        return (height - 110) * 1.15;
+    public static String change(String name) {
+        name = name + "Cat";
+        String surname = "Kotov";
+        return surname;
     }
+
 }
